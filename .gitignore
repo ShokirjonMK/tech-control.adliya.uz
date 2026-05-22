@@ -1,0 +1,16 @@
+# Yii2
+_protected/runtime/
+_protected/vendor/
+_protected/*/runtime/
+backend/assets/
+web/assets/
+*.zip
+*.tar.gz
+*.sql
+.DS_Store
+
+# Sensitive
+_protected/common/config/main-local.php
+_protected/*/config/main-local.php
+_protected/*/config/params-local.php
+
