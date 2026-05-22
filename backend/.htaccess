@@ -1,8 +1,7 @@
 RewriteEngine on
 
-# /backend/ va /backend ni /backend/uz/ ga redirect qil
+# /backend/ -> /backend/uz/ ga redirect qil
 RewriteRule ^$ /backend/uz/ [R=302,L]
-RewriteRule ^index\.php$ /backend/uz/ [R=302,L]
 
 # If a directory or a file exists, use the request directly
 RewriteCond %{REQUEST_FILENAME} !-f
