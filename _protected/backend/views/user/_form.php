@@ -13,9 +13,9 @@ use yii\widgets\ActiveForm;
 
     <?php $form = ActiveForm::begin(['id' => 'form-user']); ?>
 
+        <?= $form->field($user, 'full_name') ?>
+
         <?= $form->field($user, 'username') ?>
-        
-<!--        --><?//= $form->field($user, 'email') ?>
 
         <?php if ($user->scenario === 'create'): ?>
             <?= $form->field($user, 'password')->widget(PasswordInput::class, []) ?>
@@ -27,6 +27,8 @@ use yii\widgets\ActiveForm;
 
     <div class="row">
     <div class="col-lg-6">
+
+        <?= $form->field($user, 'gender')->dropDownList([1 => 'Erkak', 2 => 'Ayol']) ?>
 
         <?= $form->field($user, 'status')->dropDownList($user->statusList) ?>
 
