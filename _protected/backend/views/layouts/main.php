@@ -59,7 +59,7 @@ AppAsset::register($this);
             ->where(['=', 'user.id', Yii::$app->user->id])
             ->one(); ?>
                 <span class="brand-text font-weight-light">
-               Adliya Nazorat Markazi
+               Adliya moddiy-texnik baza
             </a>
 
             <style type="text/css">

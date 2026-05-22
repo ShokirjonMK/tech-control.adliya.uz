@@ -17,7 +17,7 @@ $this->title = Yii::t('app', 'Login');
 <body>
 
     <div class="adliya-text">
-        <div><p>Adliya Elektron Nazorat Markazi</p> </div>
+        <div><p>Adliya moddiy-texnik baza</p> </div>
     </div>
 
 <div class="kirish">
