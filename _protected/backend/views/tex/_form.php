@@ -25,7 +25,7 @@ use yii\helpers\ArrayHelper;
         '
         ]);
 
-    $dataRoom=ArrayHelper::map(\common\models\Room::find()->asArray()->one(), 'id', 'name');
+    $dataRoom=ArrayHelper::map(\common\models\Room::find()->asArray()->all(), 'id', 'name');
     echo $form->field($model, 'room_id')->dropDownList(
         $dataRoom,
         ['id'=>'name']
